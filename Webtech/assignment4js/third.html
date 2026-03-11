@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="askuser()">cick here</button>
+    <p id="result"></p>
+    <script>
+        function askuser(){
+            let choice = confirm("do u want to continue");
+
+            if(choice == true   ){
+                document.getElementById("result").innerHTML = "user chose to continue";
+            }
+            else {
+                document.getElementById("result").innerHTML = "user cancelled the action";
+            }
+        }
+    </script>
+</body>
+</html>
