@@ -1,0 +1,16 @@
+<input type="number" id="num">
+<input type="text" id="result">
+<button onclick="factorial()">Find Factorial</button>
+
+<script>
+function factorial(){
+    let n = document.getElementById("num").value;
+    let fact = 1;
+
+    for(let i=1;i<=n;i++){
+        fact = fact * i;
+    }
+
+    document.getElementById("result").value = fact;
+}
+</script>
