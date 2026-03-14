@@ -12,9 +12,14 @@ int multi(int a , int b ){
     return sum;
 }
 
+void display(string name , string greeting = "good morning"){
+  cout<<"hello  "<<name <<greeting <<endl;
+}
+
 int main(){
     int result = add(4,5);
     int home = multi(4,7);
     cout<<result<<endl;
-    cout<<home;
+    cout<<home<<endl;
+    display("umair ");
 }
