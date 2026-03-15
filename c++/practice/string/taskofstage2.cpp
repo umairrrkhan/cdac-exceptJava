@@ -6,17 +6,32 @@ using namespace std;
 
 
 int countvowels(string s){
-    int count = 0 ;
+    int vowelscount = 0 ;
+    int constcount  = 0 ;
 
     for (int i = 0 ; i<s.length(); i++){
 
         if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u') {
-    count++;
-}
+    vowelscount++;
+       }
         
     }
 
-    return count;
+    return vowelscount;
+}
+
+int countconst(string s){
+    int constcount  = 0 ;
+
+    for (int i = 0 ; i<s.length(); i++){
+
+        if (s[i] != 'a' || s[i] != 'e' || s[i] != 'i' || s[i] != 'o' || s[i] != 'u') {
+    constcount++;
+       }
+        
+    }
+
+    return constcount;
 }
 
 void printdispaly(string s){
@@ -35,6 +50,10 @@ int main(){
     int result = countvowels(name);
 
     cout<<result<<endl;
+
+    int result1 = countconst(name);
+
+    cout<<result1<<endl;
 
 
 }
