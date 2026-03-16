@@ -16,6 +16,7 @@ int main(){
 
     *ptr = 30 ;
 
-    cout<<" new age "<<age <<endl;
+    cout<<" new age "<<age <<endl; // here its very simple fist of all *ptr use to get value right and also can be change and & use to get address okay right .
+    
 
 }
