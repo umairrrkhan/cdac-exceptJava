@@ -42,6 +42,6 @@ int main(){
 
         car1.display();
         car2.display();
-        cout << "Car1 speed OK? " << car1.isspeed() << endl;  // prints 0 (false)
-        cout << "Car2 speed OK? " << car2.isspeed() << endl;  // prints 1 (true)
+        cout << "Car1 speed OK? " << car1.isspeed() << endl;  
+        cout << "Car2 speed OK? " << car2.isspeed() << endl;  
     }
