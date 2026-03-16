@@ -30,7 +30,7 @@ class rectangel : public Shape{
 
 int main(){
 
-    Shape* s1 = new Cirlce();
+    Shape* s1 = new Cirlce();  //if we use new we have to use delete otherwise it will be get memory leak; 
     Shape* s2 = new rectangel();
 
     s1->draw();
